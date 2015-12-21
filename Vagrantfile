@@ -30,4 +30,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     end
 
+    config.vm.synced_folder "~/bol/projs", "/projs", :create => "true", mount_options: ["dmode=777,fmode=777"]
 end
